@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Young-Founder</title>
 </head>
-<body>
 
-    <!-- HERE I CREAT A NAVBAR -->
-    <!-- I MAKE 2 DIV FIRST LEFT-SIDE AND SECOND RIGHT-SIDE -->
+<body>
+    <!-- NAVBAR SECTION -->
+    <!-- Navbar is fixed at the top of the page -->
     <nav>
-        <!-- LEFT-SIDE DIV ONLY CONTAIN COMPANY LOGO -->
+        <!-- Left side contains the company logo -->
         <div class="left-side">
-            <img src="./images/youngFounder-logo.svg" height="30px" width="150px">
+            <img src="./images/youngFounder-logo.svg" height="30px" width="150px" alt="YoungFounder Logo">
         </div>
-        <!-- RIGHT-SIDE DIVE FOR LINKS  -->
+
+        <!-- Right side contains navigation links -->
         <div class="right-side">
             <a href="#">Home</a>
             <a href="#">Courses</a>
@@ -23,27 +25,27 @@
             <a href="#">About</a>
         </div>
     </nav>
-    <!-- NAVBAR END -->
+    <!-- End of Navbar -->
 
-    <!-- FIRST SECTION(HERO SECTION) HERE ALSO WE HAVE 2 DIV ONE LEFT AND SECOND RIGHT -->
+    <!-- HERO SECTION -->
+    <!-- Main section with two columns - text content and benefits -->
     <div class="main-sec">
-
-        <!-- LEFT SIDE DIVE -->
+        <!-- Left column - Main headings and CTA buttons -->
         <div class="left-sec">
             <h1>Build Your <span style="color: rgb(240, 118, 30);">Future</span></h1>
-
             <h1>Code Your <span style="color: rgb(240, 118, 30);">Success</span></h1>
 
             <p class="left-para">Empowering young entrepreneurs with the technical skills and business acumen to turn their ideas into successful startups.</p>
 
             <button class="btn1">Explore Courses</button>
-
             <button class="btn2">Get Startup Guidance</button>
         </div>
 
-        <!-- RIGHT SIDE DIV -->
+        <!-- Right column - Benefits box -->
         <div class="right-sec">
             <h1>Why Choose YoungFounder?</h1>
+
+            <!-- Benefit points with hover effect -->
             <div class="point">
                 <div class="txt1">
                     <h5>Technical Excellence</h5>
@@ -53,7 +55,8 @@
 
             <div class="point">
                 <div class="txt2">
-                    <h5>Learn coding from industry experts</h5>
+                    <h5>Startup Funding</h5>
+                    <!-- Fixed the heading -->
                     <p>Navigate the complex world of startup funding</p>
                 </div>
             </div>
@@ -61,7 +64,7 @@
             <div class="point">
                 <div class="txt3">
                     <h5>Practical Curriculum</h5>
-                        <p>Real-world projects and case studies</p>
+                    <p>Real-world projects and case studies</p>
                 </div>
             </div>
 
@@ -73,119 +76,254 @@
             </div>
         </div>
     </div>
-    <!-- HERO SECTION END  -->
+    <!-- End of Hero Section -->
 
-
-    <!-- SECOND SECTION START -->
-
-    <!-- PARENT DIV -->
-<div class="second-sec">
+    <!-- COURSES SECTION -->
+    <!-- Light gray background section with course cards -->
+    <div class="second-sec">
         <h1 class="heading">Technical Courses</h1>
         <p class="paragraph">Comprehensive curriculum designed to equip you with the technical skills needed to build and scale your startup.</p>
 
-        <!-- CARD CONTAINER -->
-        <!-- FIRST CARD -->
-    <div class="course-container">
+        <!-- Single container for all course cards -->
+        <div class="course-container">
+            <!-- Course Card 1 -->
             <div class="course-card">
                 <div class="icon-box">☕</div>
                 <div class="course-level">
                     <span>Beginner</span>
                     <span>8 weeks</span>
                 </div>
-                    <div class="course-title">JavaScript Fundamentals</div>
-
-                    <div class="course-desc">
-                        Master the building blocks of modern web development with comprehensive JavaScript training.
-                    </div>
-
-                <a href="#" class="learn-more-btn">Learn more<a>
-            </div>
-            <!-- FIRST CARD END -->
-
-            <!-- SECOND CARD -->
-    <div class="course-card">
-        <div class="icon-box">🧱</div>
-            <div class="course-level">
-                <span>Intermediate</span>
-                <span>10 weeks</span>
-            </div>
-            <div class="course-title">Frontend Development</div>
-
-            <div class="course-desc">
-            Learn HTML, CSS, React, and more to create stunning and responsive user interfaces.
-            </div>
-            <a href="#" class="learn-more-btn">Learn more</a>
-    </div>
-
-    <!-- SECOND CARD END -->
-
-    <!-- THIRD CARD -->
-
-    <div class="course-card">
-        <div class="icon-box">🗂️</div>
-            <div class="course-level">
-                <span>Intermediate</span>
-                <span>12 weeks</span>
-            </div>
-            <div class="course-title">Backend Development</div>
-            <div class="course-desc">
-                Build robust server-side applications with Node.js, Express, and RESTful APIs.
-            </div>
-                <a href="#" class="learn-more-btn">Learn more<a>
-    </div>
-
-    <!--THIRD CARD END  -->
-    <!-- FOURTH CARD -->
-    <div class="course-container">
-        <div class="course-card">
-            <div class="icon-box">☕</div>
-            <div class="course-level">
-                <span>Beginner</span>
-                <span>8 weeks</span>
-            </div>
                 <div class="course-title">JavaScript Fundamentals</div>
-
                 <div class="course-desc">
                     Master the building blocks of modern web development with comprehensive JavaScript training.
                 </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
 
-            <a href="#" class="learn-more-btn">Learn more<a>
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <div class="icon-box">🧱</div>
+                <div class="course-level">
+                    <span>Intermediate</span>
+                    <span>10 weeks</span>
+                </div>
+                <div class="course-title">Frontend Development</div>
+                <div class="course-desc">
+                    Learn HTML, CSS, React, and more to create stunning and responsive user interfaces.
+                </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <div class="icon-box">🗂️</div>
+                <div class="course-level">
+                    <span>Intermediate</span>
+                    <span>12 weeks</span>
+                </div>
+                <div class="course-title">Backend Development</div>
+                <div class="course-desc">
+                    Build robust server-side applications with Node.js, Express, and RESTful APIs.
+                </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+
+            <!-- Course Card 4 -->
+            <div class="course-card">
+                <div class="icon-box">☕</div>
+                <div class="course-level">
+                    <span>Intermediate</span>
+                    <span>8 weeks</span>
+                </div>
+                <div class="course-title">Database Management</div>
+                <div class="course-desc">
+                    Learn SQL and NoSQL database design, optimization, and integration with applications.
+                </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+
+            <!-- Course Card 5 -->
+            <div class="course-card">
+                <div class="icon-box">🧱</div>
+                <div class="course-level">
+                    <span>Advance</span>
+                    <span>16 weeks</span>
+                </div>
+                <div class="course-title">Full Stack Development</div>
+                <div class="course-desc">
+                    Combine frontend and backend skills to build complete web applications from scratch.
+                </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+
+            <!-- Course Card 6 -->
+            <div class="course-card">
+                <div class="icon-box">🗂️</div>
+                <div class="course-level">
+                    <span>Beginner</span>
+                    <span>6 weeks</span>
+                </div>
+                <div class="course-title">HTML & CSS Mastery</div>
+                <div class="course-desc">
+                    Build the foundation of web development with semantic HTML and modern CSS techniques.
+                </div>
+                <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
         </div>
-        <!-- FOURTH CARD END -->
 
-        <!-- FIFTH CARD -->
+        <!-- View All Courses Button -->
+        <button class="all">View All Courses</button>
+    </div>
+    <!-- End of Courses Section -->
 
-<div class="course-card">
-    <div class="icon-box">🧱</div>
-        <div class="course-level">
-            <span>Intermediate</span>
-            <span>10 weeks</span>
+    <!-- FOUNDER SECTION - DARK BLUE BACKGROUND -->
+    <!-- This section has a dark background with main heading -->
+    <div class="third-sec">
+        <span>ENTREPRENEURSHIP</span>
+        <h1 class="third-heading">From Developer to Founder</h1>
+        <p class="third-para">We provide the guidance and resources you need to transform your technical skills into entrepreneurial success.</p>
+    </div>
+    <!-- End of Founder Section -->
+
+    <!-- STARTUP CARDS SECTION -->
+    <!-- Dark background with cards for startup programs -->
+    <div class="main-card">
+        <!-- Startup Card 1 -->
+        <div class="card-container" style="margin-left: 10px;">
+            <div class="card-content">
+                <h2 class="card-heading">Start a Startup for Just ₹49</h2>
+                <p class="card-para">Want to Start Your Own Startup But Don't Know Where to Begin? Join our Live 60-Minute Session.</p>
+            </div>
+
+            <!-- Benefits list with bullet points -->
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Real steps to build from scratch</h3>
+                </div>
+                <div class="benefit">
+                    <h3>MVP, funding & marketing</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Avoid common mistakes</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Free Startup Checklist</h3>
+                </div>
+            </div>
+
+            <a href="#" class="join-button">Join Now</a>
         </div>
-        <div class="course-title">Frontend Development</div>
 
-        <div class="course-desc">
-        Learn HTML, CSS, React, and more to create stunning and responsive user interfaces.
-        </div>
-        <a href="#" class="learn-more-btn">Learn more</a>
-</div>
+        <!-- Startup Card 2 -->
+        <div class="card-container">
+            <div class="card-content">
+                <h2 class="card-heading">Learn What MBA Won't Teach You</h2>
+                <p class="card-para">MBA Can't Teach You How to Build a Real Startup. But this LIVE 60-minute session will.</p>
+            </div>
 
-<!-- FIFTH CARD END  -->
-<!-- SIXTH CARD -->
-<div class="course-card">
-    <div class="icon-box">🗂️</div>
-        <div class="course-level">
-            <span>Intermediate</span>
-            <span>12 weeks</span>
-        </div>
-        <div class="course-title">Backend Development</div>
-        <div class="course-desc">
-            Build robust server-side applications with Node.js, Express, and RESTful APIs.
-        </div>
-            <a href="#" class="learn-more-btn">Learn more<a>
-</div>
-<!-- SIXTH CARD END -->
-</div>
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Validate your idea</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Get your first users</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Build real traction</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Only ₹49 to join</h3>
+                </div>
+            </div>
 
-</div>
+            <a href="#" class="join-button">Join Now</a>
+        </div>
+
+        <!-- Startup Card 3 -->
+        <div class="card-container" style="margin-left: 30px;">
+            <div class="card-content">
+                <h2 class="card-heading">Student Founder Special</h2>
+                <p class="card-para">Calling All Students Who Dream of Running a Startup! Join our 60-minute Live Call.</p>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Ideas that actually work</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Build MVP without coding</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Attract users & raise funds</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Avoid beginner mistakes</h3>
+                </div>
+            </div>
+
+            <a href="#" class="join-button">Join Now</a>
+        </div>
+
+        <!-- Startup Card 4 -->
+        <div class="card-container">
+            <div class="card-content">
+                <h2 class="card-heading">From ₹49 to a Full Startup</h2>
+                <p class="card-para">What if ₹49 Could Be the Start of Your Startup Journey? Build your startup blueprint.</p>
+            </div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <h3>Start with ₹0</h3>
+                </div>
+                <div class="benefit">
+                    <h3>No fluff, real strategies</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Free startup checklist</h3>
+                </div>
+                <div class="benefit">
+                    <h3>Limited seats available</h3>
+                </div>
+            </div>
+
+            <a href="#" class="join-button">Join Now</a>
+        </div>
+
+        <!-- CONTACT/REQUEST SECTION -->
+        <!-- Two-column layout form section -->
+        <div class="request-card">
+            <!-- Left side with text content -->
+            <div class="left-side">
+                <h1>60-Minute Startup Masterclass</h1>
+                <p class="req-para">Join our live 60-minute session for just ₹49 and learn everything you need to kickstart your entrepreneurial journey. Perfect for students, side hustlers, and early-stage founders.</p>
+
+                <div class="details">
+                    <p class="detail-para">Learn the real steps to build a startup from scratch</p>
+                    <p class="detail-para">Understand MVP, funding, marketing & mistakes to avoid</p>
+                    <p class="detail-para">Get a Free Startup Checklist + Toolkit worth ₹9999</p>
+                    <p class="detail-para">Limited Seats | Live Zoom Call | ₹49 Only</p>
+                </div>
+            </div>
+
+            <!-- Right side with form -->
+            <div class="right-side">
+                <h1 class="apply">Apply Now</h1>
+                <input type="text" placeholder="Enter Your Name">
+                <input type="email" placeholder="Enter Your Email">
+                <input type="number" placeholder="Enter Your Phone Number">
+                <select id="training-intrest">
+                    <option value="">Select training Interest</option>
+                    <option value="startup49">Start a Startup for Just ₹49</option>
+                    <option value="mba">Learn What MBA Won't Teach You</option>
+                    <option value="student-founder">Student Founder Special</option>
+                    <option value="full-startup">From ₹49 to a Full Startup</option>
+                </select>
+                <button class="request-button">Request Information</button>
+            </div>
+        </div>
+    </div>
+    <!-- End of Startup Cards Section -->
+
 </body>
+
 </html>

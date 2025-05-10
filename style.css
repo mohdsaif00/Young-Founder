@@ -1,271 +1,944 @@
-/* BASIC CSS  */
-*{
+/* 
+* BASIC CSS RESET
+* This removes default browser spacing and ensures consistent styling
+* The * selector targets all elements on the page
+*/
+
+* {
     padding: 0;
+    /* Removes all padding from elements */
     margin: 0;
+    /* Removes all margins from elements */
     box-sizing: border-box;
+    /* Makes width/height include padding and border */
 }
-/* SET FONT FAMILY */
-body{
+
+
+/* 
+* SETTING THE BASE FONT FAMILY
+* This applies to all text on the website unless overridden
+*/
+
+body {
     font-family: arial, sans-serif;
+    /* Uses Arial font, falls back to system sans-serif if unavailable */
+    max-width: 100%;
+    /* Prevents content from extending beyond viewport width */
+    overflow-x: h;
+    /* Note: This should be "hidden" to prevent horizontal scrolling */
 }
-/* NAVBAR STYLE */
-nav{
+
+
+/* 
+* NAVIGATION BAR STYLING
+* This creates a fixed navbar at the top of the page
+*/
+
+nav {
     display: flex;
+    /* Makes child elements arrange horizontally */
     align-items: center;
+    /* Centers items vertically */
     justify-content: space-between;
+    /* Pushes items to opposite ends of the navbar */
     width: 100%;
+    /* Makes navbar span full width of viewport */
     height: 9vh;
+    /* Sets height to 9% of viewport height */
     padding: 20px;
+    /* Adds space inside the navbar */
     background: white;
+    /* Sets background color */
     box-shadow: 0 2px 10px black;
+    /* Adds shadow effect below navbar */
     position: fixed;
+    /* Fixes navbar at the top even when scrolling */
     top: 0;
+    /* Positions navbar at the top edge */
     z-index: 1000;
+    /* Ensures navbar appears above other content */
 }
 
-/* NAVBAR LEFT SIDE STYLE */
-.left-side{
+
+/* 
+* NAVBAR LEFT SIDE STYLING
+* This styles the left part of the navbar (typically logo/brand)
+*/
+
+.left-side {
     margin-left: 40px;
+    /* Adds space to the left of this element */
 }
 
-.right-side{
+
+/* 
+* NAVBAR RIGHT SIDE STYLING
+* This styles the right part of the navbar (typically navigation links)
+*/
+
+.right-side {
     padding: 60px;
+    /* Adds space inside this element */
 }
 
-.right-side a{
+
+/* Styling for navigation links */
+
+.right-side a {
     text-decoration: none;
+    /* Removes underline from links */
     padding: 12px;
+    /* Adds space around link text */
     font-size: 20px;
+    /* Sets text size */
     color: black;
+    /* Sets text color */
 }
 
-.right-side a:hover{
-    color: rgb(240, 118, 30) ;
+
+/* Styling for links when hovered */
+
+.right-side a:hover {
+    color: rgb(240, 118, 30);
+    /* Changes text color on hover to orange */
 }
 
-/* MAIN SECTION STYLE I CREATE 1 PARENT DIV IT'S NAME IS main-sec AND I ALSO CREATE 2 DIV IN PARENT FIRST LEFT AND RIGHT SO BESICALLY HAM PARENT DIV KO DISPLAY FLEX DENGE JISE LEFT OR RIGHT SIDE KE DV AUTOMATICALLY SET HO JAYENGE */
-.main-sec{
+
+/* 
+* MAIN SECTION STYLING
+* This section contains a flex layout with left and right columns
+*/
+
+.main-sec {
     display: flex;
+    /* Makes child elements arrange horizontally */
     padding-left: 70px;
+    /* Adds space on the left */
     width: 100%;
-    height: 110vh;
+    /* Makes section span full width */
+    height: 105vh;
+    /* Sets height to 105% of viewport height */
     background-color: white;
+    /* Sets background color */
     padding-top: 32vh;
+    /* Adds large space at top (for content below fixed navbar) */
     font-size: 32px;
+    /* Sets base text size for this section */
 }
 
 
-/* LEFT SIDE STYLE */
+/* 
+* LEFT SECTION STYLING
+* This is the content column on the left side of the main section
+*/
+
 .left-sec {
     width: 45%;
-}
-.left-sec h1{
-    padding: 20px;
+    /* Takes up 45% of the parent container width */
 }
 
-.left-sec .left-para{
+.left-sec h1 {
     padding: 20px;
+    /* Adds space around heading */
 }
 
-.left-sec .left-para{
+.left-sec .left-para {
+    padding: 20px;
+    /* Adds space around paragraph */
+}
+
+.left-sec .left-para {
     font-size: 23px;
+    /* Sets paragraph text size */
 }
 
-.left-sec button{
+
+/* Styling for buttons in the left section */
+
+.left-sec button {
     padding: 20px;
+    /* Adds space inside buttons */
     width: 220px;
+    /* Sets button width */
     margin-left: 12px;
+    /* Adds space to the left of buttons */
     border-radius: 8px;
+    /* Rounds button corners */
     font-size: 18px;
+    /* Sets button text size */
     border: none;
+    /* Removes default border */
     font-weight: 500;
+    /* Makes text slightly bold */
 }
 
-.left-sec .btn1{
-    background-color:  rgb(240, 118, 30);
+
+/* Styling for the first button (call to action) */
+
+.left-sec .btn1 {
+    background-color: rgb(240, 118, 30);
+    /* Sets orange background */
     color: white;
+    /* Sets white text */
 }
 
-.left-sec .btn1:hover{
+
+/* Hover effect for the first button */
+
+.left-sec .btn1:hover {
     background-color: orangered;
+    /* Darkens the orange color */
     transition: all 0.5s ease;
+    /* Smooths the color change over 0.5 seconds */
 }
 
-.left-sec .btn2{
+
+/* Styling for the second button (secondary action) */
+
+.left-sec .btn2 {
     background-color: white;
+    /* Sets white background */
     border: 3px solid black;
+    /* Adds black border */
     color: black;
+    /* Sets black text */
 }
 
-.left-sec .btn2:hover{
+
+/* Hover effect for the second button */
+
+.left-sec .btn2:hover {
     background-color: black;
+    /* Changes to black background */
     color: white;
+    /* Changes to white text */
     transition: all 0.5s ease;
+    /* Smooths the transition over 0.5 seconds */
 }
 
-/* RIGHT SIDE STYLE */
 
-.right-sec{
+/* 
+* RIGHT SECTION STYLING
+* This is the content column on the right side of the main section (often a form)
+*/
+
+.right-sec {
     background-color: white;
+    /* Sets background color */
     border-top: orange 5px solid;
+    /* Adds orange accent at top */
     padding: 25px;
+    /* Adds space inside */
     border-radius: 10px;
-    height: 69vh;
+    /* Rounds corners */
+    height: 67vh;
+    /* Sets height to 67% of viewport height */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+    /* Adds shadow effect */
     width: 50%;
+    /* Takes up 50% of the parent container width */
 }
 
-.txt1{
+
+/* Styling for text input fields */
+
+.txt1 {
     height: 60px;
+    /* Sets input height */
     padding: 10px;
+    /* Adds space inside input */
     margin-bottom: 32px;
+    /* Adds space below input */
     padding-left: 1px;
+    /* Reduces padding on left side */
 }
 
-.txt2{
+.txt2 {
     height: 60px;
     padding: 10px;
     padding-left: 1px;
     margin-bottom: 32px;
 }
 
-.txt3{
+.txt3 {
     height: 60px;
     padding: 10px;
     margin-bottom: 32px;
 }
 
-.txt4{
+.txt4 {
     height: 60px;
     padding: 10px;
 }
 
-.txt1:hover{
+
+/* Hover effects for text inputs */
+
+.txt1:hover {
+    background-color: rgb(255, 237, 202);
+    /* Changes to light orange on hover */
+    border-radius: 8px;
+    /* Rounds corners */
+    transition: all 0.5s ease;
+    /* Smooths transition */
+}
+
+.txt2:hover {
     background-color: rgb(255, 237, 202);
     border-radius: 8px;
     transition: all 0.5s ease;
 }
 
-.txt2:hover{
+.txt3:hover {
     background-color: rgb(255, 237, 202);
     border-radius: 8px;
     transition: all 0.5s ease;
 }
 
-.txt3:hover{
+.txt4:hover {
     background-color: rgb(255, 237, 202);
     border-radius: 8px;
     transition: all 0.5s ease;
 }
 
-.txt4:hover{
-    background-color: rgb(255, 237, 202);
-    border-radius: 8px;
-    transition: all 0.5s ease;
-}
 
-.right-sec h1{
+/* Text styling in the right section */
+
+.right-sec h1 {
     font-size: 30px;
+    /* Sets heading size */
     padding-bottom: 30px;
+    /* Adds space below heading */
 }
 
-.right-sec p{
+.right-sec p {
     font-size: 18px;
+    /* Sets paragraph size */
     padding-left: 33px;
+    /* Indents paragraph */
 }
 
-.right-sec h5{
+.right-sec h5 {
     padding-left: 35px;
+    /* Indents subheading */
     font-size: 20px;
+    /* Sets subheading size */
     color: #333;
+    /* Sets dark gray color */
 }
 
-/* SECOND SEC STYLE FOR MAKING A CARD */
-.second-sec{
+
+/* 
+* SECOND SECTION STYLING - COURSE CARDS
+* This section uses CSS Grid to display cards
+*/
+
+.second-sec {
     display: grid;
+    /* Sets up a grid layout */
     grid-template-columns: (3, 1fr);
+    /* Note: Should be "repeat(3, 1fr)" to create 3 equal columns */
     gap: 20px;
+    /* Adds space between grid items */
     justify-content: center;
-    height: 150vh;
+    /* Centers grid horizontally */
+    height: 160vh;
+    /* Sets section height */
     background: #eeeded;
+    /* Sets light gray background */
 }
 
-.heading{
+
+/* Section heading styling */
+
+.heading {
     text-align: center;
+    /* Centers text */
     font-size: 32px;
+    /* Sets font size */
     padding-top: 80px;
+    /* Adds space above */
     margin-bottom: 15px;
+    /* Adds space below */
 }
 
-.paragraph{
+
+/* Section paragraph styling */
+
+.paragraph {
     text-align: center;
+    /* Centers text */
     margin-bottom: 25px;
+    /* Adds space below */
     font-size: 20px;
+    /* Sets font size */
     font-weight: bold;
+    /* Makes text bold */
 }
 
-  .course-container {
+
+/* Container for course cards */
+
+.course-container {
     display: flex;
+    /* Sets up a flex layout */
     flex-wrap: wrap;
+    /* Allows items to wrap to next line if needed */
     gap: 30px;
+    /* Adds space between cards */
     justify-content: center;
-  }
-
-  .course-card {
-    width: 28%;
-    height: 45vh;
-    border: 1px solid #eee;
-    border-top: 4px solid #ec6b59;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    padding: 20px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
+    /* Centers cards horizontally */
 }
+
+
+/* Individual course card styling */
+
+.course-card {
+    width: 28%;
+    /* Sets card width */
+    height: 45vh;
+    /* Sets card height */
+    border: 1px solid #eee;
+    /* Adds light border */
+    border-top: 4px solid #ec6b59;
+    /* Adds accent color at top */
+    border-radius: 12px;
+    /* Rounds corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    /* Adds subtle shadow */
+    padding: 20px;
+    /* Adds space inside card */
+    background-color: #fff;
+    /* Sets white background */
+    transition: transform 0.3s ease;
+    /* Prepares for hover animation */
+}
+
+
+/* Hover effect for course cards */
 
 .course-card:hover {
     transform: translateY(-5px);
+    /* Moves card up slightly on hover */
 }
+
+
+/* Styling for icon container */
 
 .icon-box {
     font-size: 50px;
+    /* Sets icon size */
     margin-bottom: 20px;
+    /* Adds space below icon */
     color: #ec6b59;
+    /* Sets icon color to coral/red */
 }
+
+
+/* Styling for course level indicator */
 
 .course-level {
     color: #888;
+    /* Sets gray text color */
     font-size: 19px;
+    /* Sets font size */
     display: flex;
+    /* Sets up flex layout */
     justify-content: space-between;
+    /* Spreads items to edges */
     margin-bottom: 13px;
+    /* Adds space below */
 }
+
+
+/* Course title styling */
 
 .course-title {
     font-weight: bold;
+    /* Makes text bold */
     font-size: 22px;
+    /* Sets font size */
     margin: 13px 0;
+    /* Adds space above and below */
 }
+
+
+/* Course description styling */
 
 .course-desc {
     color: #666;
+    /* Sets darker gray color */
     font-size: 19px;
+    /* Sets font size */
     margin-bottom: 25px;
+    /* Adds space below */
 }
+
+
+/* "Learn more" button styling */
 
 .learn-more-btn {
     display: block;
+    /* Makes button full width block */
     width: 100%;
+    /* Ensures button spans full width */
     background-color: #111;
+    /* Sets dark background */
     color: white;
+    /* Sets white text */
     text-align: center;
+    /* Centers text */
     padding: 10px;
+    /* Adds space inside button */
     border-radius: 6px;
+    /* Rounds corners */
     text-decoration: none;
+    /* Removes underline */
     font-weight: bold;
+    /* Makes text bold */
     transition: background-color 0.3s;
-  }
+    /* Prepares for hover animation */
+}
+
+
+/* Hover effect for "Learn more" button */
 
 .learn-more-btn:hover {
     background-color: #333;
+    /* Lightens button color slightly */
+}
+
+
+/* "View all courses" button styling */
+
+.all {
+    background-color: orangered;
+    /* Sets orange background */
+    width: 300px;
+    /* Sets button width */
+    padding: 30px;
+    /* Adds space inside button */
+    font-size: 25px;
+    /* Sets font size */
+    font-weight: 600;
+    /* Makes text semi-bold */
+    margin-top: 40px;
+    /* Adds space above */
+    margin-bottom: 70px;
+    /* Adds space below */
+    margin-left: 40%;
+    border-radius: 9px;
+    /* Rounds corners */
+    border: 3px solid black;
+    /* Adds border */
+    color: white;
+    /* Sets text color */
+    cursor: pointer;
+}
+
+.all:hover {
+    background-color: rgb(250, 135, 93);
+}
+
+
+/* 
+* THIRD SECTION STYLING
+* This is a dark section with highlights
+*/
+
+.third-sec {
+    text-align: center;
+    /* Centers text */
+    padding: 70px;
+    /* Adds space inside section */
+    height: 40vh;
+    /* Sets section height */
+    background-color: #111;
+    /* Sets dark background */
+}
+
+
+/* Highlight span styling */
+
+.third-sec span {
+    display: inline-block;
+    /* Makes span behave like a block element */
+    padding: 5px 10px;
+    /* Adds space inside span */
+    color: white;
+    /* Sets text color */
+    border-radius: 10px;
+    /* Rounds corners */
+    background-color: orangered;
+    /* Sets orange background */
+}
+
+
+/* Third section heading styling */
+
+.third-heading {
+    padding-top: 30px;
+    /* Adds space above */
+    font-size: 50px;
+    /* Sets font size */
+    color: white;
+    /* Sets text color */
+}
+
+
+/* Third section paragraph styling */
+
+.third-para {
+    margin-left: 22%;
+    /* Shifts paragraph right */
+    color: gainsboro;
+    /* Sets light gray color */
+    font-size: 25px;
+    /* Sets font size */
+    max-width: 900px;
+    /* Limits paragraph width */
+    line-height: 1.6;
+    /* Increases line spacing */
+}
+
+
+/* 
+* MAIN CARD SECTION
+* This section contains multiple cards in a flex layout
+*/
+
+.main-card {
+    display: flex;
+    /* Sets up flex layout */
+    flex-wrap: wrap;
+    /* Allows cards to wrap to next line */
+    gap: 20px;
+    /* Adds space between cards */
+    padding-top: 50px;
+    /* Adds space above */
+    padding-left: 50px;
+    /* Adds space on left */
+    height: 170vh;
+    /* Sets section height */
+    background-color: #111;
+    /* Sets dark background */
+}
+
+
+/* Individual card container styling */
+
+.card-container {
+    border-left: 3px solid orangered;
+    /* Adds accent line on left */
+    border-radius: 10px;
+    /* Rounds corners */
+    height: 40vh;
+    /* Sets card height */
+    width: 45%;
+    /* Sets card width */
+    background-color: rgb(33, 40, 86);
+    /* Sets dark blue background */
+}
+
+
+/* Card content styling */
+
+.card-content {
+    color: white;
+    /* Sets text color */
+    line-height: 1.8;
+    /* Increases line spacing */
+    padding-top: 30px;
+    /* Adds space above */
+    padding-right: 30px;
+    /* Adds space on right */
+    padding-left: 110px;
+    /* Adds significant space on left */
+}
+
+
+/* Benefits list container styling */
+
+.benefits {
+    color: white;
+    /* Sets text color */
+    display: grid;
+    /* Sets up grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equal columns */
+    gap: 10px;
+    /* Adds space between grid items */
+    margin: 15px 0;
+    /* Adds space above and below */
+    padding-left: 40px;
+    /* Adds space on left */
+}
+
+
+/* Individual benefit item styling */
+
+.benefit {
+    display: flex;
+    /* Sets up flex layout */
+    align-items: center;
+    /* Centers items vertically */
+    font-size: 13px;
+    /* Sets font size */
+    margin-bottom: 5px;
+    /* Adds space below */
+}
+
+
+/* Creates bullet point for benefit items */
+
+.benefit::before {
+    content: "•";
+    /* Adds bullet character */
+    color: #ff5757;
+    /* Sets bullet color to red */
+    font-size: 20px;
+    /* Sets bullet size */
+    margin-right: 8px;
+    /* Adds space after bullet */
+}
+
+
+/* Join button styling */
+
+.join-button {
+    display: block;
+    /* Makes button full width block */
+    width: 90%;
+    /* Sets button width */
+    background-color: transparent;
+    /* Makes background transparent */
+    color: #FF5757;
+    /* Sets text color to red */
+    border: 1px solid #FF5757;
+    /* Adds red border */
+    padding: 10px;
+    /* Adds space inside button */
+    margin-left: 30px;
+    /* Adds space on left */
+    border-radius: 5px;
+    /* Rounds corners */
+    text-align: center;
+    /* Centers text */
+    text-decoration: none;
+    /* Removes underline */
+    font-weight: bold;
+    /* Makes text bold */
+    margin-top: auto;
+    /* Pushes button to bottom */
+    transition: all 0.3s;
+    /* Prepares for hover animation */
+}
+
+
+/* Join button hover effect */
+
+.join-button:hover {
+    background-color: rgba(255, 87, 87, 0.1);
+    /* Adds slight red tint on hover */
+}
+
+
+/* 
+* REQUEST SECTION STYLING
+* This is a form/contact section with left and right columns
+*/
+
+.request-card {
+    display: flex;
+    /* Sets up flex layout */
+    justify-content: center;
+    /* Centers items horizontally */
+    align-items: center;
+    /* Centers items vertically */
+    gap: 10px;
+    /* Adds space between items */
+    margin-left: 22px;
+    /* Adds space on left */
+    border-radius: 15px;
+    /* Rounds corners */
+    background-color: rgb(33, 40, 86);
+    /* Sets dark blue background */
+    width: 92%;
+    /* Sets card width */
+    height: 60vh;
+    /* Sets card height */
+}
+
+
+/* Left column heading styling */
+
+.left-side h1 {
+    color: white;
+    /* Sets text color */
+    padding: 20px;
+    /* Adds space around heading */
+}
+
+
+/* Left column paragraph styling */
+
+.left-side .req-para {
+    color: white;
+    /* Sets text color */
+    width: 90%;
+    /* Limits paragraph width */
+    font-size: 22px;
+    /* Sets font size */
+    padding: 20px;
+    /* Adds space around paragraph */
+}
+
+
+/* Creates bullet points for detail items */
+
+.left-side .details .detail-para::before {
+    content: "•";
+    /* Adds bullet character */
+    color: #ff5757;
+    /* Sets bullet color to red */
+    font-size: 20px;
+    /* Sets bullet size */
+    padding-right: 10px;
+    /* Adds space after bullet */
+}
+
+
+/* Detail paragraph styling */
+
+.left-side .details .detail-para {
+    font-size: 25px;
+    /* Sets font size */
+    line-height: 1.5;
+    /* Increases line spacing */
+    padding-left: 20px;
+    /* Adds space on left */
+    color: white;
+    /* Sets text color */
+}
+
+
+/* Right column form container styling */
+
+.request-card .right-side {
+    margin: 60px;
+    /* Adds space around form */
+    width: 50%;
+    /* Sets form width */
+    height: 50vh;
+    /* Sets form height */
+    border-radius: 30px;
+    /* Rounds corners significantly */
+    background-color: black;
+    /* Sets black background */
+}
+
+
+/* Form heading styling */
+
+.right-side .apply {
+    padding-bottom: 10px;
+    /* Adds space below */
+    color: white;
+    /* Sets text color */
+    text-align: center;
+    /* Centers text */
+}
+
+
+/* Form input field styling */
+
+.right-side input {
+    padding: 10px;
+    /* Adds space inside input */
+    width: 100%;
+    /* Makes input full width */
+    margin-bottom: 15px;
+    /* Adds space below input */
+    border-radius: 40px;
+    /* Makes input highly rounded */
+    font-size: 20px;
+    /* Sets font size */
+    color: white;
+    /* Sets text color */
+    background-color: #111;
+    /* Sets dark background */
+    border: none;
+    /* Removes default border */
+}
+
+
+/* Focus effect for input fields */
+
+.right-side input:focus {
+    border: 2px solid orangered;
+    /* Adds orange border when focused */
+    outline: none;
+    /* Removes default focus outline */
+}
+
+
+/* Dropdown menu styling */
+
+.right-side #training-intrest {
+    padding: 10px;
+    /* Adds space inside dropdown */
+    outline: none;
+    /* Removes default outline */
+    border: none;
+    /* Removes default border */
+    border-radius: 40px;
+    /* Makes dropdown highly rounded */
+    font-size: 20px;
+    /* Sets font size */
+    background-color: #111;
+    /* Sets dark background */
+    color: grey;
+    /* Sets text color */
+    width: 100%;
+    /* Makes dropdown full width */
+}
+
+
+/* Focus effect for dropdown */
+
+#training-intrest:focus {
+    border: 2px solid orangered;
+    /* Adds orange border when focused */
+    outline: none;
+    /* Removes default focus outline */
+}
+
+
+/* Request submission button styling */
+
+.request-button {
+    padding: 10px;
+    /* Adds space inside button */
+    margin-top: 7px;
+    /* Adds space above */
+    margin-left: 25%;
+    /* Centers button horizontally */
+    border-radius: 20px;
+    /* Rounds corners significantly */
+    border: none;
+    /* Removes default border */
+    background-color: orangered;
+    /* Sets orange background */
+    color: white;
+    /* Sets text color */
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+}
+
+
+/* Request button hover effect */
+
+.request-button:hover {
+    background-color: rgb(249, 106, 54);
+    /* Lightens orange slightly */
 }
